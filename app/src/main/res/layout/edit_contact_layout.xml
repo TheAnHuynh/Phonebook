@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        android:padding="3dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:padding="3dp"
+        android:inputType="phone"
+        android:hint="Phone number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="5">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:text="save"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:id="@+id/btnSave"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="cancel"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
